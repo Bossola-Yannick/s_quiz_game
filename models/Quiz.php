@@ -123,7 +123,18 @@ class Quiz
     {
         $newBdd = new ConnexionBdd();
         $bdd = $newBdd->Connexion();
-        $sql = "SELECT quiz.id, quiz.titre, quiz.description, quiz.id_user, utilisateur.pseudo FROM quiz JOIN utilisateur ON quiz.id_user = utilisateur.id ORDER BY quiz.id;";
+        $sql = "SELECT 
+                quiz.id, 
+                quiz.titre, 
+                quiz.description, 
+                quiz.id_user, 
+                utilisateur.pseudo, 
+                image.nom AS image_nom, 
+                image.bin AS image_bin
+            FROM quiz 
+            JOIN utilisateur ON quiz.id_user = utilisateur.id
+            LEFT JOIN image ON quiz.id = image.id_quiz
+            ORDER BY quiz.id;";
 
         $stmt = $bdd->prepare($sql);
         $stmt->execute();
