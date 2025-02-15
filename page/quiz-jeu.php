@@ -164,7 +164,7 @@ if (!isset($_SESSION['selectIdQuiz'])) {
                             <p> Attention aux <span class="text-pink">mauvaises</span> réponses </p>
                         </h2>
                     </div>
-
+                    <audio autoplay src="../asset//sounds/StartingQuiz.mp3"></audio>
                     <div class="button-box">
                         <form action="" method="post">
                             <input type="submit" name="start" id="start" class="button-start button-next-green" value="Commencer">
@@ -185,6 +185,7 @@ if (!isset($_SESSION['selectIdQuiz'])) {
                         </h2>
                         <h2><?= $messageScore ?></h2>
                         <?php if ($updatedScore == 0): ?>
+                            <audio autoplay src="../asset/sounds/LosingAccount.mp3"></audio>
                             <p>
                                 Quel dommage.
                             </p>
