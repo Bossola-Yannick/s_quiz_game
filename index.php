@@ -105,12 +105,12 @@ $quizUser = $newQuiz->getAllQuizByUser();
                 <article class="quiz-card">
                     <h2 class="quiz-card-title"><?= $quiz['titre'] ?></h2>
                     <div class="quiz-card-img">
-                <?php if (!empty($quiz['image_bin'])): ?>
-                    <img src="./asset/img/quiz/<?= $quiz['image_nom'] ?>" alt="<?= $quiz['image_nom'] ?>" />
-                <?php else: ?>
-                    <img src="./asset/img/sonGoku.jpg" alt="Image du quiz">
-                <?php endif; ?>
-            </div>
+                        <?php if (!empty($quiz['image_bin'])): ?>
+                            <img src="./asset/img/quiz/<?= $quiz['image_nom'] ?>" alt="<?= $quiz['image_nom'] ?>" />
+                        <?php else: ?>
+                            <img src="./asset/img/sonGoku.jpg" alt="Image du quiz">
+                        <?php endif; ?>
+                    </div>
                     <p class="quiz-card-description"><?= $quiz['description'] ?></p>
                     <form method="post" action="">
                         <button type="submit" name="start-quiz" id="button" class="button valider button-center" value="<?= $quiz['id'] ?>">Lancer le Quiz</button>

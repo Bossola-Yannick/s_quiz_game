@@ -13,7 +13,7 @@ if ((isset($_POST['valid-question'])) and ($_POST['question'] != "")) {
     $_SESSION['last-question-id'] = $lastQuestion[0]['id'];
 };
 // Ajout des reponse à la question
-if ((isset($_POST['valid-response'])) and (($_POST['good'] == "") || ($_POST['bad1'] == "") || ($_POST['bad2'] == "") || ($_POST['bad3'] == ""))) {
+if ((isset($_POST['valid-response'])) and ((($_POST['good'] == "") || ($_POST['bad1'] == "") || ($_POST['bad2'] == "") || ($_POST['bad3'] == "")))) {
     $error = new Question();
     $error->deleteQuestion($_SESSION['last-question-id']);
     unset($_SESSION['last-question']);
@@ -39,7 +39,7 @@ if ((isset($_POST['valid-response'])) and (($_POST['good'] == "") || ($_POST['ba
 
 <main class="autor-quiz">
 
-    <h1 class="title-quiz">Quiz : BLABLABLA</h1>
+    <h1 class="title-quiz">Quiz : <?= $_SESSION['titreQuiz'] ?></h1>
     <section class="new-question-update">
         <article class="new-question-update-card">
             <form action="" method="post">

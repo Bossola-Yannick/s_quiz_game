@@ -11,6 +11,7 @@ if (isset($_POST['valid'])) {
     $lastQuiz = $newQuiz->getLastQuiz();
     $_SESSION['quizId'] = $lastQuiz[0]['id'];
     $titreQuiz = $lastQuiz[0]['titre'];
+    $_SESSION['titreQuiz'] = $titreQuiz;
     $descriptionQuiz = $lastQuiz[0]['description'];
 };
 if (isset($_POST['valid-image'])) {
