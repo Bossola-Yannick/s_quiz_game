@@ -8,7 +8,7 @@ Il peut créer des quiz et/ou apporter des modifications à ceux-ci.
 Il peut aussi jouer aux quiz proposés ou ses quiz personnel.
 Une mauvaise réponse coûte une vie.
 Une fois les 10 vies écoulées, l'utilisateur est éliminé. Il ne peut plus se connecter et son joueur apparait dans la liste des joueurs éliminés.
-Il doit donc se réinscrire pour joueur à nouveau.
+Il doit donc se réinscrire avec un nouveau pseudo pour jouer à nouveau.
 
 ## 📓 Le projet 
 
@@ -55,6 +55,7 @@ _Bonus:_
 - HTML
 - CSS
 - PHP
+- SQL
 
 **Outils :**
 
