@@ -65,7 +65,3 @@ _Bonus:_
 - **Trello** _pour l'organisation en équipe_
 - **Figma** _pour la conception de la maquette_
 - **Git** et **Github** _pour stocker, partager et travailler en équipe_
-
-## 📝 Charte graphique 
-
-![Image de la charte graphique.](/asset/img/charte-graphique.png)
