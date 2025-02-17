@@ -30,9 +30,11 @@ if (isset($_POST['valid-image'])) {
 
     <?php if (!isset($_POST['valid'])): ?>
         <form action="" method="post">
-            <input type="text" name="titre" class="name" placeholder="Non du Quiz">
-            <input type="text" name="description" class="name" placeholder="Description du Quiz">
-            <input type="submit" name="valid" id="button" class="button valider button-center" value="Valider">
+            <div class="new-quiz-name">
+                <input type="text" name="titre" class="name" placeholder="Non du Quiz">
+                <input type="text" name="description" class="name" placeholder="Description du Quiz">
+                <input type="submit" name="valid" id="button" class="button valider button-center" value="Valider">
+            </div>
         </form>
     <?php elseif (isset($_POST['valid'])): ?>
         <h2 class="title-quiz"><?= $titreQuiz ?></h2>

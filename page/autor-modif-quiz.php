@@ -42,6 +42,7 @@ if (isset($_POST['update-question'])) {
 $quizSelect = new Quiz();
 $result = $quizSelect->get_quizSelect($_SESSION['quizId']);
 $resultQuiz = $quizSelect->getOneQuiz($_SESSION['quizId']);
+$_SESSION['titreQuiz'] = $resultQuiz[0]['titre'];
 
 // Suppression d'un Quiz
 if (isset($_POST['delete-quiz'])) {

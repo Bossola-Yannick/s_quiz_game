@@ -2,9 +2,9 @@
 class ConnexionBdd
 {
     protected string $host = "localhost";
-    protected string $username = "root";
-    protected string $password = "";
-    protected string $dbName = "s-quiz_game";
+    protected string $username = "squizgame";
+    protected string $password = "s-quiz_game";
+    protected string $dbName = "yannick-bossola_s-quiz_game";
 
     public function connexion()
     {

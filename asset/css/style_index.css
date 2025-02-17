@@ -79,13 +79,10 @@
     flex-direction: column;
     justify-content: space-between;
     gap: 1rem;
-    width: 70%;
+    width: 90%;
   }
 }
 @media screen and (max-width: 400px) {
-  .quiz-card {
-    width: 85%;
-  }
   .classement img {
     width: 4rem;
   }
