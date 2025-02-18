@@ -23,7 +23,7 @@ if (isset($_POST['update'])) {
 };
 ?>
 
-<?php include '../component/header.php'; ?>
+<?php include '../components/header.php'; ?>
 <main class="autor-quiz">
     <h1 class="title-quiz">Quiz : BLABLABLA</h1>
     <section class="new-question-update">
@@ -44,4 +44,4 @@ if (isset($_POST['update'])) {
         </article>
     </section>
 </main>
-<?php include '../component/footer.php'; ?>
+<?php include '../components/footer.php'; ?>

@@ -58,7 +58,7 @@ if (isset($_POST['delete-question'])) {
 }
 ?>
 
-<?php include '../component/header.php'; ?>
+<?php include '../components/header.php'; ?>
 <main class="autor-quiz">
     <div class="update-quiz">
         <?php if (isset($_POST['update-name'])) : ?>
@@ -110,4 +110,4 @@ if (isset($_POST['delete-question'])) {
         <input type="submit" name="return" id="button" class="button-new valider" value="Retour aux Quiz">
     </form>
 </main>
-<?php include '../component/footer.php'; ?>
+<?php include '../components/footer.php'; ?>
